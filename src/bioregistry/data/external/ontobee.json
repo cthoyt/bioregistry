@@ -1,0 +1,1157 @@
+{
+  "AEO": {
+    "library": "Library",
+    "name": "Anatomical Entity Ontology",
+    "url": "http://www.ontobee.org/ontology/AEO"
+  },
+  "AGRO": {
+    "library": "Library",
+    "name": "Agronomy Ontology",
+    "url": "http://www.ontobee.org/ontology/AGRO"
+  },
+  "AMPHX": {
+    "library": "Library",
+    "name": "The Amphioxus Development and Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/AMPHX"
+  },
+  "APO": {
+    "library": "Library",
+    "name": "Ascomycete phenotype ontology",
+    "url": "http://www.ontobee.org/ontology/APO"
+  },
+  "APOLLO_SV": {
+    "library": "Library",
+    "name": "Apollo Structured Vocabulary",
+    "url": "http://www.ontobee.org/ontology/APOLLO_SV"
+  },
+  "ARO": {
+    "library": "Library",
+    "name": "Antibiotic Resistance Ontology",
+    "url": "http://www.ontobee.org/ontology/ARO"
+  },
+  "BCGO": {
+    "library": "Library",
+    "name": "Beta Cell Genomics Ontology",
+    "url": "http://www.ontobee.org/ontology/BCGO"
+  },
+  "BCO": {
+    "library": "Library",
+    "name": "Biological Collections Ontology",
+    "url": "http://www.ontobee.org/ontology/BCO"
+  },
+  "BFO": {
+    "library": "Foundry",
+    "name": "Basic Formal Ontology",
+    "url": "http://www.ontobee.org/ontology/BFO"
+  },
+  "BFO11": {
+    "library": "Library",
+    "name": "Basic Formal Ontology (BFO) 1.1",
+    "url": "http://www.ontobee.org/ontology/BFO11"
+  },
+  "BSPO": {
+    "library": "Library",
+    "name": "Biological Spatial Ontology",
+    "url": "http://www.ontobee.org/ontology/BSPO"
+  },
+  "BTO": {
+    "library": "Library",
+    "name": "BRENDA tissue / enzyme source",
+    "url": "http://www.ontobee.org/ontology/BTO"
+  },
+  "CARO": {
+    "library": "Library",
+    "name": "Common Anatomy Reference Ontology",
+    "url": "http://www.ontobee.org/ontology/CARO"
+  },
+  "CDAO": {
+    "library": "Library",
+    "name": "Comparative Data Analysis Ontology",
+    "url": "http://www.ontobee.org/ontology/CDAO"
+  },
+  "CDNO": {
+    "library": "Library",
+    "name": "Crop Dietary Nutrition Ontology",
+    "url": "http://www.ontobee.org/ontology/CDNO"
+  },
+  "CEPH": {
+    "library": "Library",
+    "name": "Cephalopod Ontology",
+    "url": "http://www.ontobee.org/ontology/CEPH"
+  },
+  "CHEBI": {
+    "library": "Foundry",
+    "name": "Chemical Entities of Biological Interest",
+    "url": "http://www.ontobee.org/ontology/CHEBI"
+  },
+  "CHEMINF": {
+    "library": "Library",
+    "name": "Chemical Information Ontology",
+    "url": "http://www.ontobee.org/ontology/CHEMINF"
+  },
+  "CHIRO": {
+    "library": "Library",
+    "name": "CHEBI Integrated Role Ontology",
+    "url": "http://www.ontobee.org/ontology/CHIRO"
+  },
+  "CHMO": {
+    "library": "Library",
+    "name": "Chemical Methods Ontology",
+    "url": "http://www.ontobee.org/ontology/CHMO"
+  },
+  "CIDO": {
+    "library": "Library",
+    "name": "Coronavirus Infectious Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/CIDO"
+  },
+  "CIO": {
+    "library": "Library",
+    "name": "Confidence Information Ontology",
+    "url": "http://www.ontobee.org/ontology/CIO"
+  },
+  "CL": {
+    "library": "Library",
+    "name": "Cell Ontology",
+    "url": "http://www.ontobee.org/ontology/CL"
+  },
+  "CLAO": {
+    "library": "Library",
+    "name": "Collembola Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/CLAO"
+  },
+  "CLO": {
+    "library": "Library",
+    "name": "Cell Line Ontology",
+    "url": "http://www.ontobee.org/ontology/CLO"
+  },
+  "CLO-NICR": {
+    "library": "Not Specified/No",
+    "name": "Cell Line Ontology - Chinese National Infrastructure of Cell Line Resource",
+    "url": "http://www.ontobee.org/ontology/CLO-NICR"
+  },
+  "CLO-hPSCreg": {
+    "library": "Not Specified/No",
+    "name": "Cell Line Ontology - Human Pluripotent Stem Cell Registry",
+    "url": "http://www.ontobee.org/ontology/CLO-hPSCreg"
+  },
+  "CLYH": {
+    "library": "Library",
+    "name": "Clytia hemisphaerica Development and Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/CLYH"
+  },
+  "CMO": {
+    "library": "Library",
+    "name": "Clinical measurement ontology",
+    "url": "http://www.ontobee.org/ontology/CMO"
+  },
+  "COB": {
+    "library": "Library",
+    "name": "Core Ontology for Biology and Biomedicine",
+    "url": "http://www.ontobee.org/ontology/COB"
+  },
+  "CRO": {
+    "library": "Library",
+    "name": "Contributor Role Ontology",
+    "url": "http://www.ontobee.org/ontology/CRO"
+  },
+  "CTCAE-OAEview": {
+    "library": "Not Specified/No",
+    "name": "OAE CTCAE view",
+    "url": "http://www.ontobee.org/ontology/CTCAE-OAEview"
+  },
+  "CTENO": {
+    "library": "Library",
+    "name": "Ctenophore Ontology",
+    "url": "http://www.ontobee.org/ontology/CTENO"
+  },
+  "CTO": {
+    "library": "Library",
+    "name": "CTO: Core Ontology of Clinical Trials",
+    "url": "http://www.ontobee.org/ontology/CTO"
+  },
+  "CVDO": {
+    "library": "Library",
+    "name": "Cardiovascular Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/CVDO"
+  },
+  "DDANAT": {
+    "library": "Library",
+    "name": "Dictyostelium discoideum anatomy",
+    "url": "http://www.ontobee.org/ontology/DDANAT"
+  },
+  "DDPHENO": {
+    "library": "Library",
+    "name": "Dictyostelium discoideum phenotype ontology",
+    "url": "http://www.ontobee.org/ontology/DDPHENO"
+  },
+  "DIDEO": {
+    "library": "Library",
+    "name": "Drug-drug Interaction and Drug-drug Interaction Evidence Ontology",
+    "url": "http://www.ontobee.org/ontology/DIDEO"
+  },
+  "DOID": {
+    "library": "Foundry",
+    "name": "Human Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/DOID"
+  },
+  "DPO": {
+    "library": "Library",
+    "name": "Drosophila Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/DPO"
+  },
+  "DRON": {
+    "library": "Library",
+    "name": "The Drug Ontology",
+    "url": "http://www.ontobee.org/ontology/DRON"
+  },
+  "DUO": {
+    "library": "Library",
+    "name": "Data Use Ontology",
+    "url": "http://www.ontobee.org/ontology/DUO"
+  },
+  "ECAO": {
+    "library": "Library",
+    "name": "The Echinoderm Anatomy and Development Ontology",
+    "url": "http://www.ontobee.org/ontology/ECAO"
+  },
+  "ECO": {
+    "library": "Library",
+    "name": "Evidence ontology",
+    "url": "http://www.ontobee.org/ontology/ECO"
+  },
+  "ECOCORE": {
+    "library": "Library",
+    "name": "An ontology of core ecological entities",
+    "url": "http://www.ontobee.org/ontology/ECOCORE"
+  },
+  "ECTO": {
+    "library": "Library",
+    "name": "Environmental conditions, treatments and exposures ontology",
+    "url": "http://www.ontobee.org/ontology/ECTO"
+  },
+  "EDAM": {
+    "library": "Not Specified/No",
+    "name": "EMBRACE Data and Methods",
+    "url": "http://www.ontobee.org/ontology/EDAM"
+  },
+  "EFO": {
+    "library": "Not Specified/No",
+    "name": "Experimental Factor Ontology",
+    "url": "http://www.ontobee.org/ontology/EFO"
+  },
+  "EHDAA2": {
+    "library": "Library",
+    "name": "Human developmental anatomy, abstract",
+    "url": "http://www.ontobee.org/ontology/EHDAA2"
+  },
+  "EMAPA": {
+    "library": "Library",
+    "name": "Mouse Developmental Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/EMAPA"
+  },
+  "ENVO": {
+    "library": "Library",
+    "name": "Environment Ontology",
+    "url": "http://www.ontobee.org/ontology/ENVO"
+  },
+  "EPO": {
+    "library": "Library",
+    "name": "Epidemiology Ontology",
+    "url": "http://www.ontobee.org/ontology/EPO"
+  },
+  "ERO": {
+    "library": "Library",
+    "name": "eagle-i resource ontology",
+    "url": "http://www.ontobee.org/ontology/ERO"
+  },
+  "EUPATH": {
+    "library": "Library",
+    "name": "VEuPathDB ontology",
+    "url": "http://www.ontobee.org/ontology/EUPATH"
+  },
+  "ExO": {
+    "library": "Library",
+    "name": "Exposure ontology",
+    "url": "http://www.ontobee.org/ontology/ExO"
+  },
+  "FAO": {
+    "library": "Library",
+    "name": "Fungal gross anatomy",
+    "url": "http://www.ontobee.org/ontology/FAO"
+  },
+  "FBBI": {
+    "library": "Library",
+    "name": "Biological Imaging Methods Ontology",
+    "url": "http://www.ontobee.org/ontology/FBBI"
+  },
+  "FBBT": {
+    "library": "Library",
+    "name": "Drosophila gross anatomy",
+    "url": "http://www.ontobee.org/ontology/FBBT"
+  },
+  "FBCV": {
+    "library": "Library",
+    "name": "FlyBase Controlled Vocabulary",
+    "url": "http://www.ontobee.org/ontology/FBCV"
+  },
+  "FBdv": {
+    "library": "Library",
+    "name": "Drosophila development",
+    "url": "http://www.ontobee.org/ontology/FBdv"
+  },
+  "FIDEO": {
+    "library": "Library",
+    "name": "Food Interactions with Drugs Evidence Ontology",
+    "url": "http://www.ontobee.org/ontology/FIDEO"
+  },
+  "FIX": {
+    "library": "Library",
+    "name": "Physico-chemical methods and properties",
+    "url": "http://www.ontobee.org/ontology/FIX"
+  },
+  "FLOPO": {
+    "library": "Library",
+    "name": "Flora Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/FLOPO"
+  },
+  "FMA": {
+    "library": "Library",
+    "name": "Foundational Model of Anatomy Ontology (subset)",
+    "url": "http://www.ontobee.org/ontology/FMA"
+  },
+  "FOBI": {
+    "library": "Library",
+    "name": "FOBI",
+    "url": "http://www.ontobee.org/ontology/FOBI"
+  },
+  "FOODON": {
+    "library": "Library",
+    "name": "FOODON",
+    "url": "http://www.ontobee.org/ontology/FOODON"
+  },
+  "FOVT": {
+    "library": "Library",
+    "name": "FuTRES Ontology of Vertebrate Traits",
+    "url": "http://www.ontobee.org/ontology/FOVT"
+  },
+  "FYPO": {
+    "library": "Library",
+    "name": "Fission Yeast Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/FYPO"
+  },
+  "GAZ": {
+    "library": "Library",
+    "name": "Gazetteer",
+    "url": "http://www.ontobee.org/ontology/GAZ"
+  },
+  "GECKO": {
+    "library": "Library",
+    "name": "Genomics Cohorts Knowledge Ontology",
+    "url": "http://www.ontobee.org/ontology/GECKO"
+  },
+  "GENEPIO": {
+    "library": "Library",
+    "name": "Genomic Epidemiology Ontology",
+    "url": "http://www.ontobee.org/ontology/GENEPIO"
+  },
+  "GENO": {
+    "library": "Library",
+    "name": "Genotype Ontology",
+    "url": "http://www.ontobee.org/ontology/GENO"
+  },
+  "GEO": {
+    "library": "Library",
+    "name": "Geographical Entity Ontology",
+    "url": "http://www.ontobee.org/ontology/GEO"
+  },
+  "GNO": {
+    "library": "Library",
+    "name": "Glycan Naming and Subsumption Ontology (GNOme)",
+    "url": "http://www.ontobee.org/ontology/GNO"
+  },
+  "GO": {
+    "library": "Foundry",
+    "name": "Gene Ontology",
+    "url": "http://www.ontobee.org/ontology/GO"
+  },
+  "GSSO": {
+    "library": "Library",
+    "name": "Gender, Sex, and Sexual Orientation (GSSO) ontology",
+    "url": "http://www.ontobee.org/ontology/GSSO"
+  },
+  "HANCESTRO": {
+    "library": "Library",
+    "name": "Human Ancestry Ontology",
+    "url": "http://www.ontobee.org/ontology/HANCESTRO"
+  },
+  "HAO": {
+    "library": "Library",
+    "name": "Hymenoptera Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/HAO"
+  },
+  "HOM": {
+    "library": "Library",
+    "name": "Homology Ontology",
+    "url": "http://www.ontobee.org/ontology/HOM"
+  },
+  "HP": {
+    "library": "Library",
+    "name": "Human Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/HP"
+  },
+  "HSAPDV": {
+    "library": "Library",
+    "name": "Human Developmental Stages",
+    "url": "http://www.ontobee.org/ontology/HSAPDV"
+  },
+  "HSO": {
+    "library": "Library",
+    "name": "Health Surveillance Ontology",
+    "url": "http://www.ontobee.org/ontology/HSO"
+  },
+  "HTN": {
+    "library": "Library",
+    "name": "Hypertension Ontology",
+    "url": "http://www.ontobee.org/ontology/HTN"
+  },
+  "IAO": {
+    "library": "Library",
+    "name": "Information Artifact Ontology",
+    "url": "http://www.ontobee.org/ontology/IAO"
+  },
+  "IAO-Onto-Meta": {
+    "library": "Not Specified/No",
+    "name": "IAO Ontology Metadata",
+    "url": "http://www.ontobee.org/ontology/IAO-Onto-Meta"
+  },
+  "ICDO": {
+    "library": "Not Specified/No",
+    "name": "International Classification of Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/ICDO"
+  },
+  "ICEO": {
+    "library": "Library",
+    "name": "Integrative and Conjugative Element Ontology",
+    "url": "http://www.ontobee.org/ontology/ICEO"
+  },
+  "ICO": {
+    "library": "Library",
+    "name": "Informed Consent Ontology",
+    "url": "http://www.ontobee.org/ontology/ICO"
+  },
+  "IDO": {
+    "library": "Library",
+    "name": "Infectious Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/IDO"
+  },
+  "IDOBRU": {
+    "library": "Not Specified/No",
+    "name": "Brucellosis Ontology",
+    "url": "http://www.ontobee.org/ontology/IDOBRU"
+  },
+  "IDOMAL": {
+    "library": "Library",
+    "name": "Malaria Ontology",
+    "url": "http://www.ontobee.org/ontology/IDOMAL"
+  },
+  "INO": {
+    "library": "Library",
+    "name": "Interaction Network Ontology",
+    "url": "http://www.ontobee.org/ontology/INO"
+  },
+  "KISAO": {
+    "library": "Library",
+    "name": "Kinetic Simulation Algorithm Ontology",
+    "url": "http://www.ontobee.org/ontology/KISAO"
+  },
+  "KTAO": {
+    "library": "Not Specified/No",
+    "name": "Kidney Tissue Atlas Ontology",
+    "url": "http://www.ontobee.org/ontology/KTAO"
+  },
+  "LABO": {
+    "library": "Library",
+    "name": "clinical LABoratory Ontology",
+    "url": "http://www.ontobee.org/ontology/LABO"
+  },
+  "LINCS-CLOview": {
+    "library": "Not Specified/No",
+    "name": "CLO LINCS view",
+    "url": "http://www.ontobee.org/ontology/LINCS-CLOview"
+  },
+  "LTHIDO": {
+    "library": "Not Specified/No",
+    "name": "LTHIDO",
+    "url": "http://www.ontobee.org/ontology/LTHIDO"
+  },
+  "MA": {
+    "library": "Library",
+    "name": "Mouse adult gross anatomy",
+    "url": "http://www.ontobee.org/ontology/MA"
+  },
+  "MAMO": {
+    "library": "Library",
+    "name": "Mathematical modeling ontology",
+    "url": "http://www.ontobee.org/ontology/MAMO"
+  },
+  "MAXO": {
+    "library": "Library",
+    "name": "Medical Action Ontology",
+    "url": "http://www.ontobee.org/ontology/MAXO"
+  },
+  "MCO": {
+    "library": "Library",
+    "name": "Microbial Conditions Ontology",
+    "url": "http://www.ontobee.org/ontology/MCO"
+  },
+  "MF": {
+    "library": "Library",
+    "name": "Mental Functioning Ontology",
+    "url": "http://www.ontobee.org/ontology/MF"
+  },
+  "MFMO": {
+    "library": "Library",
+    "name": "Mammalian Feeding Muscle Ontology",
+    "url": "http://www.ontobee.org/ontology/MFMO"
+  },
+  "MFOEM": {
+    "library": "Library",
+    "name": "Emotion Ontology",
+    "url": "http://www.ontobee.org/ontology/MFOEM"
+  },
+  "MFOMD": {
+    "library": "Library",
+    "name": "Mental Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/MFOMD"
+  },
+  "MI": {
+    "library": "Library",
+    "name": "Molecular Interactions Controlled Vocabulary",
+    "url": "http://www.ontobee.org/ontology/MI"
+  },
+  "MIAPA": {
+    "library": "Library",
+    "name": "MIAPA Ontology",
+    "url": "http://www.ontobee.org/ontology/MIAPA"
+  },
+  "MIRO": {
+    "library": "Library",
+    "name": "Mosquito insecticide resistance",
+    "url": "http://www.ontobee.org/ontology/MIRO"
+  },
+  "MMO": {
+    "library": "Library",
+    "name": "Measurement method ontology",
+    "url": "http://www.ontobee.org/ontology/MMO"
+  },
+  "MMUSDV": {
+    "library": "Library",
+    "name": "Mouse Developmental Stages",
+    "url": "http://www.ontobee.org/ontology/MMUSDV"
+  },
+  "MOD": {
+    "library": "Library",
+    "name": "Protein modification",
+    "url": "http://www.ontobee.org/ontology/MOD"
+  },
+  "MONDO": {
+    "library": "Library",
+    "name": "Mondo Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/MONDO"
+  },
+  "MOP": {
+    "library": "Library",
+    "name": "Molecular Process Ontology",
+    "url": "http://www.ontobee.org/ontology/MOP"
+  },
+  "MP": {
+    "library": "Library",
+    "name": "Mammalian Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/MP"
+  },
+  "MPATH": {
+    "library": "Not Specified/No",
+    "name": "Mouse pathology",
+    "url": "http://www.ontobee.org/ontology/MPATH"
+  },
+  "MPIO": {
+    "library": "Library",
+    "name": "Minimum PDDI Information Ontology",
+    "url": "http://www.ontobee.org/ontology/MPIO"
+  },
+  "MRO": {
+    "library": "Library",
+    "name": "MHC Restriction Ontology",
+    "url": "http://www.ontobee.org/ontology/MRO"
+  },
+  "MS": {
+    "library": "Library",
+    "name": "Mass spectrometry ontology",
+    "url": "http://www.ontobee.org/ontology/MS"
+  },
+  "NBO": {
+    "library": "Library",
+    "name": "Neuro Behavior Ontology",
+    "url": "http://www.ontobee.org/ontology/NBO"
+  },
+  "NCBITaxon": {
+    "library": "Library",
+    "name": "NCBI organismal classification",
+    "url": "http://www.ontobee.org/ontology/NCBITaxon"
+  },
+  "NCIT": {
+    "library": "Library",
+    "name": "NCI Thesaurus OBO Edition",
+    "url": "http://www.ontobee.org/ontology/NCIT"
+  },
+  "NCRO": {
+    "library": "Library",
+    "name": "Non-Coding RNA Ontology",
+    "url": "http://www.ontobee.org/ontology/NCRO"
+  },
+  "NDF-RT": {
+    "library": "Not Specified/No",
+    "name": "National Drug File Reference Terminology",
+    "url": "http://www.ontobee.org/ontology/NDF-RT"
+  },
+  "NOMEN": {
+    "library": "Library",
+    "name": "NOMEN - A nomenclatural ontology for biological names",
+    "url": "http://www.ontobee.org/ontology/NOMEN"
+  },
+  "OAE": {
+    "library": "Library",
+    "name": "Ontology of Adverse Events",
+    "url": "http://www.ontobee.org/ontology/OAE"
+  },
+  "OARCS": {
+    "library": "Library",
+    "name": "Ontology of Arthropod Circulatory Systems",
+    "url": "http://www.ontobee.org/ontology/OARCS"
+  },
+  "OBA": {
+    "library": "Library",
+    "name": "Ontology of Biological Attributes",
+    "url": "http://www.ontobee.org/ontology/OBA"
+  },
+  "OBCS": {
+    "library": "Library",
+    "name": "Ontology of Biological and Clinical Statistics",
+    "url": "http://www.ontobee.org/ontology/OBCS"
+  },
+  "OBI": {
+    "library": "Foundry",
+    "name": "Ontology for Biomedical Investigations",
+    "url": "http://www.ontobee.org/ontology/OBI"
+  },
+  "OBI-NIAID-GSC-BRC-view": {
+    "library": "Not Specified/No",
+    "name": "OBI NIAID-GSC-BRC view",
+    "url": "http://www.ontobee.org/ontology/OBI-NIAID-GSC-BRC-view"
+  },
+  "OBIB": {
+    "library": "Library",
+    "name": "Ontology for Biobanking",
+    "url": "http://www.ontobee.org/ontology/OBIB"
+  },
+  "OBIws": {
+    "library": "Not Specified/No",
+    "name": "OBI web service, development version",
+    "url": "http://www.ontobee.org/ontology/OBIws"
+  },
+  "OCE": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Chemical Elements",
+    "url": "http://www.ontobee.org/ontology/OCE"
+  },
+  "OCMR": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Chinese Medicine for Rheumatism",
+    "url": "http://www.ontobee.org/ontology/OCMR"
+  },
+  "OCVDAE": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Cardiovascular Drug Adverse Events",
+    "url": "http://www.ontobee.org/ontology/OCVDAE"
+  },
+  "ODAE": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Drug Adverse Events",
+    "url": "http://www.ontobee.org/ontology/ODAE"
+  },
+  "ODNAE": {
+    "library": "Not Specified/No",
+    "name": "Ontologyof Drug Neuropathy Adverse Events",
+    "url": "http://www.ontobee.org/ontology/ODNAE"
+  },
+  "OGG": {
+    "library": "Library",
+    "name": "The Ontology of Genes and Genomes",
+    "url": "http://www.ontobee.org/ontology/OGG"
+  },
+  "OGG-At": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Arabidopsis thaliana",
+    "url": "http://www.ontobee.org/ontology/OGG-At"
+  },
+  "OGG-Bru": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Brucella",
+    "url": "http://www.ontobee.org/ontology/OGG-Bru"
+  },
+  "OGG-Ce": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Caenorhabditis elegans",
+    "url": "http://www.ontobee.org/ontology/OGG-Ce"
+  },
+  "OGG-Dm": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Fruit Fly",
+    "url": "http://www.ontobee.org/ontology/OGG-Dm"
+  },
+  "OGG-Dr": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Zebrafish",
+    "url": "http://www.ontobee.org/ontology/OGG-Dr"
+  },
+  "OGG-Mm": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Mouse",
+    "url": "http://www.ontobee.org/ontology/OGG-Mm"
+  },
+  "OGG-Pf": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Plasmodium falciparum",
+    "url": "http://www.ontobee.org/ontology/OGG-Pf"
+  },
+  "OGG-Sc": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Genes and Genomes - Yeast",
+    "url": "http://www.ontobee.org/ontology/OGG-Sc"
+  },
+  "OGI": {
+    "library": "Library",
+    "name": "Ontology for genetic interval",
+    "url": "http://www.ontobee.org/ontology/OGI"
+  },
+  "OGMS": {
+    "library": "Library",
+    "name": "Ontology for General Medical Science",
+    "url": "http://www.ontobee.org/ontology/OGMS"
+  },
+  "OGSF": {
+    "library": "Library",
+    "name": "Ontology of Genetic Susceptibility Factor",
+    "url": "http://www.ontobee.org/ontology/OGSF"
+  },
+  "OHD": {
+    "library": "Library",
+    "name": "The Oral Health and Disease Ontology",
+    "url": "http://www.ontobee.org/ontology/OHD"
+  },
+  "OHMI": {
+    "library": "Library",
+    "name": "Ontology of Host-Microbiome Interactions",
+    "url": "http://www.ontobee.org/ontology/OHMI"
+  },
+  "OHPI": {
+    "library": "Library",
+    "name": "Ontology of Host Pathogen Interactions",
+    "url": "http://www.ontobee.org/ontology/OHPI"
+  },
+  "OLATDV": {
+    "library": "Library",
+    "name": "Medaka Developmental Stages",
+    "url": "http://www.ontobee.org/ontology/OLATDV"
+  },
+  "OLOBO": {
+    "library": "Not Specified/No",
+    "name": "Ontology for Linking Biological and Medical Ontologies",
+    "url": "http://www.ontobee.org/ontology/OLOBO"
+  },
+  "OMIABIS": {
+    "library": "Library",
+    "name": "Ontologized MIABIS",
+    "url": "http://www.ontobee.org/ontology/OMIABIS"
+  },
+  "OMIT": {
+    "library": "Library",
+    "name": "Ontology for MIRNA Target",
+    "url": "http://www.ontobee.org/ontology/OMIT"
+  },
+  "OMO": {
+    "library": "Library",
+    "name": "OBO Metadata Ontology",
+    "url": "http://www.ontobee.org/ontology/OMO"
+  },
+  "OMP": {
+    "library": "Library",
+    "name": "Ontology of Microbial Phenotypes",
+    "url": "http://www.ontobee.org/ontology/OMP"
+  },
+  "OMRSE": {
+    "library": "Library",
+    "name": "Ontology of Medically Related Social Entities",
+    "url": "http://www.ontobee.org/ontology/OMRSE"
+  },
+  "ONE": {
+    "library": "Library",
+    "name": "Ontology for Nutritional Epidemiology",
+    "url": "http://www.ontobee.org/ontology/ONE"
+  },
+  "ONS": {
+    "library": "Library",
+    "name": "Ontology for Nutritional Studies",
+    "url": "http://www.ontobee.org/ontology/ONS"
+  },
+  "ONTONEO": {
+    "library": "Library",
+    "name": "Obstetric and Neonatal Ontology",
+    "url": "http://www.ontobee.org/ontology/ONTONEO"
+  },
+  "OOSTT": {
+    "library": "Library",
+    "name": "Ontology of Organizational Structures of Trauma centers and Trauma systems",
+    "url": "http://www.ontobee.org/ontology/OOSTT"
+  },
+  "OPL": {
+    "library": "Library",
+    "name": "Ontology for Parasite LifeCycle",
+    "url": "http://www.ontobee.org/ontology/OPL"
+  },
+  "OPMI": {
+    "library": "Library",
+    "name": "Ontology of Precision Medicine and Investigation",
+    "url": "http://www.ontobee.org/ontology/OPMI"
+  },
+  "ORNASEQ": {
+    "library": "Library",
+    "name": "Ontology of RNA Sequencing",
+    "url": "http://www.ontobee.org/ontology/ORNASEQ"
+  },
+  "OSCI": {
+    "library": "Not Specified/No",
+    "name": "Ontology for Stem Cell Investigations",
+    "url": "http://www.ontobee.org/ontology/OSCI"
+  },
+  "OVAE": {
+    "library": "Library",
+    "name": "Ontology of Vaccine Adverse Events",
+    "url": "http://www.ontobee.org/ontology/OVAE"
+  },
+  "PATO": {
+    "library": "Foundry",
+    "name": "Phenotype And Trait Ontology",
+    "url": "http://www.ontobee.org/ontology/PATO"
+  },
+  "PCO": {
+    "library": "Library",
+    "name": "Population and Community Ontology",
+    "url": "http://www.ontobee.org/ontology/PCO"
+  },
+  "PDRO": {
+    "library": "Library",
+    "name": "The Prescription of Drugs Ontology",
+    "url": "http://www.ontobee.org/ontology/PDRO"
+  },
+  "PDUMDV": {
+    "library": "Library",
+    "name": "Platynereis Developmental Stages",
+    "url": "http://www.ontobee.org/ontology/PDUMDV"
+  },
+  "PECO": {
+    "library": "Library",
+    "name": "Plant Experimental Conditions Ontology",
+    "url": "http://www.ontobee.org/ontology/PECO"
+  },
+  "PHIPO": {
+    "library": "Library",
+    "name": "Pathogen Host Interaction Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/PHIPO"
+  },
+  "PLANA": {
+    "library": "Library",
+    "name": "planaria-ontology",
+    "url": "http://www.ontobee.org/ontology/PLANA"
+  },
+  "PLANP": {
+    "library": "Library",
+    "name": "Planarian Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/PLANP"
+  },
+  "PNO": {
+    "library": "Not Specified/No",
+    "name": "Proper Name Ontology",
+    "url": "http://www.ontobee.org/ontology/PNO"
+  },
+  "PO": {
+    "library": "Foundry",
+    "name": "Plant Ontology",
+    "url": "http://www.ontobee.org/ontology/PO"
+  },
+  "PORO": {
+    "library": "Library",
+    "name": "Porifera Ontology",
+    "url": "http://www.ontobee.org/ontology/PORO"
+  },
+  "PPO": {
+    "library": "Library",
+    "name": "Plant Phenology Ontology",
+    "url": "http://www.ontobee.org/ontology/PPO"
+  },
+  "PR": {
+    "library": "Foundry",
+    "name": "PRotein Ontology (PRO)",
+    "url": "http://www.ontobee.org/ontology/PR"
+  },
+  "PSDO": {
+    "library": "Library",
+    "name": "Performance Summary Display Ontology",
+    "url": "http://www.ontobee.org/ontology/PSDO"
+  },
+  "PSO": {
+    "library": "Library",
+    "name": "Plant Stress Ontology",
+    "url": "http://www.ontobee.org/ontology/PSO"
+  },
+  "PW": {
+    "library": "Library",
+    "name": "Pathway ontology",
+    "url": "http://www.ontobee.org/ontology/PW"
+  },
+  "RBO": {
+    "library": "Library",
+    "name": "Radiation Biology Ontology",
+    "url": "http://www.ontobee.org/ontology/RBO"
+  },
+  "REX": {
+    "library": "Library",
+    "name": "Physico-chemical process",
+    "url": "http://www.ontobee.org/ontology/REX"
+  },
+  "RNAO": {
+    "library": "Library",
+    "name": "RNA ontology",
+    "url": "http://www.ontobee.org/ontology/RNAO"
+  },
+  "RO": {
+    "library": "Library",
+    "name": "Relation Ontology",
+    "url": "http://www.ontobee.org/ontology/RO"
+  },
+  "RS": {
+    "library": "Library",
+    "name": "Rat Strain Ontology",
+    "url": "http://www.ontobee.org/ontology/RS"
+  },
+  "RXNO": {
+    "library": "Library",
+    "name": "Name Reaction Ontology",
+    "url": "http://www.ontobee.org/ontology/RXNO"
+  },
+  "SBO": {
+    "library": "Library",
+    "name": "Systems Biology Ontology",
+    "url": "http://www.ontobee.org/ontology/SBO"
+  },
+  "SDGIO": {
+    "library": "Not Specified/No",
+    "name": "Sustainable Development Goals Interface Ontology",
+    "url": "http://www.ontobee.org/ontology/SDGIO"
+  },
+  "SEPIO": {
+    "library": "Library",
+    "name": "Scientific Evidence and Provenance Information Ontology",
+    "url": "http://www.ontobee.org/ontology/SEPIO"
+  },
+  "SIBO": {
+    "library": "Library",
+    "name": "Social Insect Behavior Ontology",
+    "url": "http://www.ontobee.org/ontology/SIBO"
+  },
+  "SIO": {
+    "library": "Not Specified/No",
+    "name": "Semanticscience Integrated Ontology",
+    "url": "http://www.ontobee.org/ontology/SIO"
+  },
+  "SO": {
+    "library": "Library",
+    "name": "Sequence types and features ontology",
+    "url": "http://www.ontobee.org/ontology/SO"
+  },
+  "SPD": {
+    "library": "Library",
+    "name": "Spider Ontology",
+    "url": "http://www.ontobee.org/ontology/SPD"
+  },
+  "STATO": {
+    "library": "Library",
+    "name": "The Statistical Methods Ontology",
+    "url": "http://www.ontobee.org/ontology/STATO"
+  },
+  "SWO": {
+    "library": "Library",
+    "name": "Software ontology",
+    "url": "http://www.ontobee.org/ontology/SWO"
+  },
+  "SYMP": {
+    "library": "Library",
+    "name": "Symptom Ontology",
+    "url": "http://www.ontobee.org/ontology/SYMP"
+  },
+  "TADS": {
+    "library": "Library",
+    "name": "Tick Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/TADS"
+  },
+  "TAXRANK": {
+    "library": "Library",
+    "name": "Taxonomic rank vocabulary",
+    "url": "http://www.ontobee.org/ontology/TAXRANK"
+  },
+  "TGMA": {
+    "library": "Library",
+    "name": "Mosquito gross anatomy ontology",
+    "url": "http://www.ontobee.org/ontology/TGMA"
+  },
+  "TO": {
+    "library": "Library",
+    "name": "Plant Trait Ontology",
+    "url": "http://www.ontobee.org/ontology/TO"
+  },
+  "TRANS": {
+    "library": "Library",
+    "name": "Pathogen Transmission Ontology",
+    "url": "http://www.ontobee.org/ontology/TRANS"
+  },
+  "TSO": {
+    "library": "Not Specified/No",
+    "name": "Transportation System Ontology",
+    "url": "http://www.ontobee.org/ontology/TSO"
+  },
+  "TTO": {
+    "library": "Library",
+    "name": "Teleost taxonomy ontology",
+    "url": "http://www.ontobee.org/ontology/TTO"
+  },
+  "TXPO": {
+    "library": "Library",
+    "name": "Toxic Process Ontology",
+    "url": "http://www.ontobee.org/ontology/TXPO"
+  },
+  "UBERON": {
+    "library": "Library",
+    "name": "Uberon multi-species anatomy ontology",
+    "url": "http://www.ontobee.org/ontology/UBERON"
+  },
+  "UO": {
+    "library": "Library",
+    "name": "Units of measurement ontology",
+    "url": "http://www.ontobee.org/ontology/UO"
+  },
+  "UPA": {
+    "library": "Library",
+    "name": "Unipathway",
+    "url": "http://www.ontobee.org/ontology/UPA"
+  },
+  "UPHENO": {
+    "library": "Library",
+    "name": "Unified phenotype ontology (uPheno)",
+    "url": "http://www.ontobee.org/ontology/UPHENO"
+  },
+  "VICO": {
+    "library": "Not Specified/No",
+    "name": "Vaccination Informed Consent Ontology",
+    "url": "http://www.ontobee.org/ontology/VICO"
+  },
+  "VIO": {
+    "library": "Not Specified/No",
+    "name": "Vaccine Investigation Ontology",
+    "url": "http://www.ontobee.org/ontology/VIO"
+  },
+  "VIVO-ISF": {
+    "library": "Not Specified/No",
+    "name": "VIVO-ISF",
+    "url": "http://www.ontobee.org/ontology/VIVO-ISF"
+  },
+  "VO": {
+    "library": "Library",
+    "name": "Vaccine Ontology",
+    "url": "http://www.ontobee.org/ontology/VO"
+  },
+  "VT": {
+    "library": "Library",
+    "name": "Vertebrate trait ontology",
+    "url": "http://www.ontobee.org/ontology/VT"
+  },
+  "VTO": {
+    "library": "Library",
+    "name": "Vertebrate Taxonomy Ontology",
+    "url": "http://www.ontobee.org/ontology/VTO"
+  },
+  "VariO": {
+    "library": "Library",
+    "name": "Variation Ontology",
+    "url": "http://www.ontobee.org/ontology/VariO"
+  },
+  "WBLS": {
+    "library": "Library",
+    "name": "C. elegans development ontology",
+    "url": "http://www.ontobee.org/ontology/WBLS"
+  },
+  "WBPhenotype": {
+    "library": "Library",
+    "name": "C. elegans phenotype",
+    "url": "http://www.ontobee.org/ontology/WBPhenotype"
+  },
+  "WBbt": {
+    "library": "Library",
+    "name": "C. elegans Gross Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/WBbt"
+  },
+  "XAO": {
+    "library": "Foundry",
+    "name": "Xenopus Anatomy Ontology",
+    "url": "http://www.ontobee.org/ontology/XAO"
+  },
+  "XCO": {
+    "library": "Library",
+    "name": "Experimental condition ontology",
+    "url": "http://www.ontobee.org/ontology/XCO"
+  },
+  "XPO": {
+    "library": "Library",
+    "name": "Xenopus Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/XPO"
+  },
+  "ZECO": {
+    "library": "Library",
+    "name": "Zebrafish Experimental Conditions Ontology",
+    "url": "http://www.ontobee.org/ontology/ZECO"
+  },
+  "ZFA": {
+    "library": "Foundry",
+    "name": "Zebrafish anatomy and development ontology",
+    "url": "http://www.ontobee.org/ontology/ZFA"
+  },
+  "ZFS": {
+    "library": "Library",
+    "name": "Zebrafish developmental stages ontology",
+    "url": "http://www.ontobee.org/ontology/ZFS"
+  },
+  "ZP": {
+    "library": "Library",
+    "name": "Zebrafish Phenotype Ontology",
+    "url": "http://www.ontobee.org/ontology/ZP"
+  },
+  "d-acts": {
+    "library": "Not Specified/No",
+    "name": "Ontology of Document Acts",
+    "url": "http://www.ontobee.org/ontology/d-acts"
+  },
+  "miRNAO": {
+    "library": "Library",
+    "name": "microRNA Ontology",
+    "url": "http://www.ontobee.org/ontology/miRNAO"
+  }
+}

@@ -66,8 +66,11 @@ class Aligner(ABC):
             if bioregistry_id is not None:  # a match was found
                 _entry = self.prepare_external(external_id, external_entry)
                 _entry['prefix'] = external_id
-                self.internal_registry[bioregistry_id][self.key] = _entry
                 self.external_id_to_bioregistry_id[external_id] = bioregistry_id
+                self._update_internal_registry(bioregistry_id, _entry)
+
+    def _update_internal_registry(self, bioregistry_id, entry):
+        self.internal_registry[bioregistry_id][self.key] = entry
 
     def prepare_external(self, external_id, external_entry) -> Dict[str, Any]:
         """Prepare a dictionary to be added to the bioregistry for each external registry entry.
@@ -131,3 +134,13 @@ class Aligner(ABC):
     def print_uncurated(self, **kwargs) -> None:
         """Print the curation table."""
         print(self.get_curation_table(**kwargs))
+
+
+class NewAligner(Aligner):
+    def _update_internal_registry(self, bioregistry_id, entry):
+        self.internal_registry[bioregistry_id].setdefault('mappings', {})
+        self.internal_registry[bioregistry_id]['mappings'][self.key] = entry['prefix']
+
+        # Remove old-style data
+        if self.key in self.internal_registry[bioregistry_id]:
+            del self.internal_registry[bioregistry_id][self.key]
