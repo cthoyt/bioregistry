@@ -1,6 +1,7 @@
 name: Tests
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
@@ -70,6 +71,12 @@ jobs:
         run: |
           pip install --upgrade pip setuptools wheel
           pip install "tox<4.0.0"
+      - name: Start blazegraph and virtuoso triplestores with docker
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          docker-compose up -d
+          sleep 20
+          docker compose exec virtuoso isql -U dba -P dba exec='GRANT "SPARQL_SELECT_FED" TO "SPARQL";'
       - name: Test with pytest
         run:
           tox -e py

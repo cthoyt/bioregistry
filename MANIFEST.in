@@ -19,5 +19,5 @@ prune tests/.pytest_cache
 exclude docs/*.md
 exclude docs/_config.yml
 
-exclude .appveyor.yml .bumpversion.cfg .coveragerc .flake8 .travis.yml .readthedocs.yml tox.ini .pre-commit-config.yaml Dockerfile CITATION.cff
+exclude .appveyor.yml .bumpversion.cfg .coveragerc .flake8 .travis.yml .readthedocs.yml tox.ini .pre-commit-config.yaml Dockerfile CITATION.cff docker-compose.yml
 include LICENSE *.md *.rst

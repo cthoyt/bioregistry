@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+  bioregistry:
+    build: .
+    ports:
+      - 8888:8766
+
+  blazegraph:
+    image: metaphacts/blazegraph-basic:2.2.0-20160908.003514-6-jetty9.4.44-jre8-45dbfff
+    ports:
+      - 8889:8080
+
+  virtuoso:
+    image: openlink/virtuoso-opensource-7:latest
+    ports:
+      - 8890:8890
+    environment:
+      - DBA_PASSWORD=${VIRTUOSO_PASSWORD:-dba}

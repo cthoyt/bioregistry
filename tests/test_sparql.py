@@ -1,5 +1,6 @@
 """Tests for the local SPARQL endpoint."""
 
+import csv
 import unittest
 from typing import Set, Tuple
 from xml import etree
@@ -7,8 +8,11 @@ from xml import etree
 import requests
 
 PING_SPARQL = 'SELECT ?s ?o WHERE { BIND("hello" as ?s) . BIND("there" as ?o) . }'
-LOCAL_BIOREGISTRY = "http://localhost:5000/sparql"
-LOCAL_BLAZEGRAPH = "http://192.168.2.30:9999/blazegraph/sparql"
+# NOTE: federated queries need to use docker internal URL
+DOCKER_BIOREGISTRY = "http://bioregistry:8766/sparql"
+LOCAL_BIOREGISTRY = "http://localhost:8888/sparql"
+LOCAL_BLAZEGRAPH = "http://localhost:8889/blazegraph/namespace/kb/sparql"
+LOCAL_VIRTUOSO = "http://localhost:8890/sparql"
 
 
 def _handle_res_xml(res: requests.Response) -> Set[Tuple[str, str]]:
@@ -32,14 +36,13 @@ def _handle_res_json(res: requests.Response) -> Set[Tuple[str, str]]:
 
 
 def _handle_res_csv(res: requests.Response) -> Set[Tuple[str, str]]:
-    header, *lines = (line.strip().split(",") for line in res.text.splitlines())
-    records = (dict(zip(header, line)) for line in lines)
-    return {(record["s"], record["o"]) for record in records}
+    reader = csv.DictReader(res.text.splitlines())
+    return {(record["s"], record["o"]) for record in reader}
 
 
 HANDLERS = {
     "application/json": _handle_res_json,
-    "application/xml": _handle_res_xml,
+    "application/sparql-results+xml": _handle_res_xml,
     "text/csv": _handle_res_csv,
 }
 
@@ -64,12 +67,22 @@ def sparql_service_available(endpoint: str) -> bool:
     return list(records) == [("hello", "there")]
 
 
-SPARQL = f"""\
+SPARQL_VALUES = f"""\
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT DISTINCT ?s ?o WHERE {{
-    SERVICE <{LOCAL_BIOREGISTRY}> {{
-        VALUES ?s {{ <http://purl.obolibrary.org/obo/CHEBI_24867> }}
-        ?s owl:sameAs ?o
+    SERVICE <{DOCKER_BIOREGISTRY}> {{
+        VALUES ?s {{ <http://purl.obolibrary.org/obo/CHEBI_24867> }} .
+        ?s owl:sameAs ?o .
+    }}
+}}
+""".rstrip()
+
+SPARQL_SIMPLE = f"""\
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT DISTINCT ?s ?o WHERE {{
+    SERVICE <{DOCKER_BIOREGISTRY}> {{
+        <http://purl.obolibrary.org/obo/CHEBI_24867> owl:sameAs ?o .
+        ?s owl:sameAs ?o .
     }}
 }}
 """.rstrip()
@@ -79,11 +92,11 @@ SELECT DISTINCT ?s ?o WHERE {{
     sparql_service_available(LOCAL_BIOREGISTRY), reason="No local Bioregistry is running"
 )
 class TestSPARQL(unittest.TestCase):
-    """Tests for SPARQL."""
+    """Tests for federated SPARQL queries to the Bioregistry mapping service."""
 
-    def assert_endpoint(self, endpoint: str, *, accept: str):
+    def assert_endpoint(self, endpoint: str, query: str, *, accept: str):
         """Assert the endpoint returns favorable results."""
-        records = get(endpoint, SPARQL, accept=accept)
+        records = get(endpoint, query, accept=accept)
         self.assertIn(
             ("http://purl.obolibrary.org/obo/CHEBI_24867", "https://bioregistry.io/chebi:24867"),
             records,
@@ -93,13 +106,27 @@ class TestSPARQL(unittest.TestCase):
         sparql_service_available(LOCAL_BLAZEGRAPH), reason="No local BlazeGraph is running"
     )
     def test_federate_blazegraph(self):
-        """Test federating on a blazegraph.
+        """Test federating on a Blazegraph triplestore.
 
-        How to run blazegraph locally:
-
-        1. Get: https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.jar
-        2. Run: java -jar blazegraph.jar
+        To run blazegraph locally: docker compose up
         """
         for mimetype in HANDLERS:
             with self.subTest(mimetype=mimetype):
-                self.assert_endpoint(LOCAL_BLAZEGRAPH, accept=mimetype)
+                self.assert_endpoint(LOCAL_BLAZEGRAPH, SPARQL_SIMPLE, accept=mimetype)
+                self.assert_endpoint(LOCAL_BLAZEGRAPH, SPARQL_VALUES, accept=mimetype)
+
+    @unittest.skipUnless(
+        sparql_service_available(LOCAL_VIRTUOSO), reason="No local Virtuoso is running"
+    )
+    def test_federate_virtuoso(self):
+        """Test federating on a OpenLink Virtuoso triplestore.
+
+        To run Virtuoso locally:
+        1. docker compose up
+        2. docker compose exec virtuoso isql -U dba -P dba exec='GRANT "SPARQL_SELECT_FED" TO "SPARQL";'
+        """
+        for mimetype in HANDLERS:
+            with self.subTest(mimetype=mimetype):
+                self.assert_endpoint(LOCAL_VIRTUOSO, SPARQL_SIMPLE, accept=mimetype)
+                # TODO: Virtuoso fails to resolves VALUES in federated query
+                # self.assert_endpoint(LOCAL_VIRTUOSO, SPARQL_VALUES, accept=mimetype)
