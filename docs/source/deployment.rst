@@ -118,6 +118,8 @@ how to replace them.
 | ``METAREGISTRY_EXAMPLE_IDENTIFIER``  | An example local unique identifier to go with the        |
 |                                      | example prefix                                           |
 +--------------------------------------+----------------------------------------------------------+
+| ``ANALYTICS_API_KEY``                | A key for https://github.com/tom-draper/api-analytics    |
++--------------------------------------+----------------------------------------------------------+
 
 Finally, after filling up a configuration JSON file and naming it something like ``config.json``,
 you can use the ``--config config.json`` flag in the Python commands to run the web service below.

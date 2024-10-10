@@ -5,6 +5,7 @@ from pathlib import Path
 from textwrap import dedent
 from typing import TYPE_CHECKING, Any, Mapping, Optional, Union
 
+import pystow
 from curies.mapping_service import MappingServiceGraph, MappingServiceSPARQLProcessor
 from fastapi import APIRouter, FastAPI
 from flask import Flask
@@ -187,6 +188,14 @@ def get_app(
     fast_api.include_router(api_router)
     fast_api.include_router(_get_sparql_router(app))
     fast_api.mount("/", WSGIMiddleware(app))
+
+    analytics_api_key = conf.get("ANALYTICS_API_KEY") or pystow.get_config(
+        "bioregistry", "analytics_api_key"
+    )
+    if analytics_api_key:
+        from api_analytics.fastapi import Analytics
+
+        fast_api.add_middleware(Analytics, api_key=analytics_api_key)  # Add middleware
 
     # Make manager available in all jinja templates
     app.jinja_env.globals.update(
