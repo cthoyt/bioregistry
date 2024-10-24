@@ -26,7 +26,6 @@ from typing import (
     cast,
 )
 
-import pydantic.schema
 from pydantic import BaseModel, Field, PrivateAttr
 
 from bioregistry import constants as brc
@@ -36,6 +35,7 @@ from bioregistry.constants import (
     EMAIL_RE,
     ORCID_PATTERN,
     PATTERN_KEY,
+    PYDANTIC_1,
     URI_FORMAT_KEY,
 )
 from bioregistry.license_standardizer import standardize_license
@@ -2807,8 +2807,11 @@ def _allowed_uri_format(rv: str) -> bool:
 
 
 @lru_cache(maxsize=1)
-def get_json_schema():
+def get_json_schema() -> dict[str, Any]:
     """Get the JSON schema for the bioregistry."""
+    if PYDANTIC_1:
+        raise NotImplementedError
+
     rv = {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "https://bioregistry.io/schema.json",
@@ -2831,21 +2834,14 @@ def get_json_schema():
         " resources"
     )
 
-    try:
-        # see https://docs.pydantic.dev/latest/usage/json_schema/#general-notes-on-json-schema-generation
-        from pydantic.json_schema import models_json_schema
-    except ImportError:
-        schema_dict = pydantic.schema.schema(
-            models,
-            title=title,
-            description=description,
-        )
-    else:
-        _, schema_dict = models_json_schema(
-            [(model, "validation") for model in models],
-            title=title,
-            description=description,
-        )
+    # see https://docs.pydantic.dev/latest/usage/json_schema/#general-notes-on-json-schema-generation
+    from pydantic.json_schema import models_json_schema
+
+    _, schema_dict = models_json_schema(
+        [(model, "validation") for model in models],
+        title=title,
+        description=description,
+    )
     rv.update(schema_dict)
     return rv
 
