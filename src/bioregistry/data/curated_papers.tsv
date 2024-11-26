@@ -54,3 +54,4 @@ pubmed	relevant	orcid	date_curated	relevancy_type	pr_added	notes
 39341994	0	0009-0009-5240-7463	2024-10-15	not_identifiers_resource	1223	
 39345624	1	0009-0009-5240-7463	2024-10-19	new_publication	1223	Publication for sgd and sgd.pathways
 39401100	1	0009-0009-5240-7463	2024-11-20	new_publication	1264	Publication for intact and intact.molecule
+39436020	1	0009-0009-5240-7463	2024-11-25	new_provider	1282	Provider for PDB
