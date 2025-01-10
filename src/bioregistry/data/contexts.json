@@ -1,7 +1,9 @@
 {
   "obo": {
     "blacklist": [
-      "icd9"
+      "icd9",
+      "orphanet",
+      "gro"
     ],
     "custom_prefix_map": {
       "PMID": "https://www.ncbi.nlm.nih.gov/pubmed/"
@@ -29,7 +31,10 @@
       "default"
     ],
     "prefix_remapping": {
+      "GEO": "ncbi.geo",
+      "cpga": "GRO",
       "ensembl": "ENSEMBL",
+      "geogeo": "GEO",
       "icd10": "ICD10WHO",
       "mesh": "MESH",
       "omim.ps": "OMIMPS",

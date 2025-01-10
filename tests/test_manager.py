@@ -4,6 +4,8 @@
 
 import unittest
 
+import pytest
+
 import bioregistry
 from bioregistry import Manager, parse_curie
 from bioregistry.export.rdf_export import get_full_rdf
@@ -261,3 +263,16 @@ class TestResourceManager(unittest.TestCase):
         self.assertIn("loggerhead", res.source_only)
         # This is a non-ontology so it won't get in OBO Foundry
         self.assertIn("DCTERMS", res.target_only)
+
+    @pytest.mark.slow
+    def test_converter(self):
+        """Test standardizing prefixes with the converter."""
+        converter = self.manager.get_converter()
+        self.assertEqual("meddra", converter.standardize_prefix("MEDDRA"))
+        self.assertEqual("meddra", converter.standardize_prefix("MedDRA"))
+
+        self.assertEqual("pubmed", converter.standardize_prefix("PMID"))
+        self.assertEqual("pubmed", converter.standardize_prefix("PUBMED"))
+        self.assertEqual("pubmed", converter.standardize_prefix("pmid"))
+        self.assertEqual("pubmed", converter.standardize_prefix("pubmed"))
+        self.assertEqual("pubmed", converter.standardize_prefix("PubMed"))
