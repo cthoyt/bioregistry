@@ -11,6 +11,7 @@ from .compare import compare
 from .export.cli import export
 from .lint import lint
 from .utils import OLSBroken, get_hexdigests, secho
+from .validate.cli import validate
 from .version import VERSION
 
 __all__ = [
@@ -98,6 +99,7 @@ def align(
 main.add_command(lint)
 main.add_command(compare)
 main.add_command(export)
+main.add_command(validate)
 main.add_command(web)
 
 
