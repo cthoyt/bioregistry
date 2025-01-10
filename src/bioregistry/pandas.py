@@ -33,6 +33,7 @@ __all__ = [
     "curies_to_iris",
     "curies_to_identifiers",
     "iris_to_curies",
+    "pd_collapse_to_curies",
 ]
 
 logger = logging.getLogger(__name__)
@@ -156,14 +157,14 @@ def validate_prefixes(
     return results
 
 
-def summarize_prefix_validation(df: pd.DataFrame, idx: pd.Series) -> None:
+def summarize_prefix_validation(df: pd.DataFrame, idx: pd.Series, column) -> None:
     """Provide a summary of prefix validation."""
     # TODO add suggestions on what to do next, e.g.:,
     #  1. can some be normalized? use normalization function
     #  2. slice out invalid content
     #  3. make new prefix request to Bioregistry
     count = (~idx).sum()
-    unique = sorted(df[~idx][0].unique())
+    unique = sorted(df[~idx][column].unique())
 
     print(  # noqa:T201
         f"{count:,} of {len(df.index):,} ({count / len(df.index):.0%})",
@@ -555,3 +556,17 @@ def iris_to_curies(
     """
     column = _norm_column(df, column)
     df[target_column or column] = df[column].map(bioregistry.curie_from_iri, na_action="ignore")
+
+
+def pd_collapse_to_curies(df: pd.DataFrame, prefix_column: Union[int, str], identifier_column: Union[int, str], *, target_column: str) -> None:
+    prefix_column = _norm_column(df, prefix_column)
+    identifier_column = _norm_column(df, identifier_column)
+    df[target_column] = [
+        f"{prefix}:{identifier}"
+        for prefix, identifier in df[[prefix_column, identifier_column]].values
+    ]
+    del df[prefix_column]
+    del df[identifier_column]
+
+
+
