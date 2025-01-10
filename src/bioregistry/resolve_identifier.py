@@ -475,6 +475,12 @@ def get_iri(
     A custom provider is given, which makes the Bioregistry very extensible
     >>> get_iri("chebi:24867", provider="chebi-img")
     'https://www.ebi.ac.uk/chebi/displayImage.do?defaultImage=true&imageIndex=0&chebiId=24867'
+
+    An override for a metaregistry is built-in to the record
+    >>> get_iri("kisao:0000057", provider="ols")
+    'https://www.ebi.ac.uk/ols/ontologies/kisao/terms?iri=http://www.biomodels.net/kisao/KISAO#KISAO_0000057'
+    >>> get_iri("kisao:0000057", provider="bioportal")
+    'https://bioportal.bioontology.org/ontologies/KISAO?p=classes&conceptid=kisao:KISAO_0000057'
     """
     return manager.get_iri(
         prefix=prefix,
