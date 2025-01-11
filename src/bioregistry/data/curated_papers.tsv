@@ -101,6 +101,7 @@ pubmed	relevant	orcid	date_curated	relevancy_type	pr_added	notes
 39558178	1	0009-0009-5240-7463	2024-12-07	new_prefix	1298	New database for NASA GeneLab (ngl) resource. Re-labels existing entries with new identifiers
 39558183	1	0009-0009-5240-7463	2024-12-16	new_publication	1333	Publication for string
 39558184	1	0009-0009-5240-7463	2024-12-09	new_publication	1299	Publication for genbank
+39558185	1	0009-0009-5240-7463	2024-12-03	new_provider	1294	Provider for metacyc
 39558187	1	0009-0009-5240-7463	2024-12-11	new_publication	1304	Publication for rgap
 39559979	0	0009-0009-5240-7463	2024-12-10	irrelevant_other	1305	
 39565202	1	0009-0009-5240-7463	2024-12-05	new_publication	1292	Publication for InterPro
