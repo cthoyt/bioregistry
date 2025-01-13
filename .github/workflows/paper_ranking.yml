@@ -5,6 +5,10 @@ on:
     - cron: '0 0 1 * *' # runs on the first day of every month
   workflow_dispatch:
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   paper-ranking:
     runs-on: ubuntu-latest
@@ -41,11 +45,16 @@ jobs:
         echo "PYTHONPATH=$PYTHONPATH"  # Verify PYTHONPATH
         python src/bioregistry/analysis/paper_ranking.py --start-date ${{ env.START_DATE }} --end-date ${{ env.END_DATE }}
 
-    - name: Upload Full List as Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: full-predictions-list-${{ env.START_DATE }}-to-${{ env.END_DATE }}
-        path: exports/analyses/paper_ranking/predictions_${{ env.START_DATE }}_to_${{ env.END_DATE }}.tsv
+    - name: Configure Git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit and Push Changes
+      run: |
+        git add exports/analyses/paper_ranking/predictions_${{ env.START_DATE }}_to_${{ env.END_DATE }}.tsv
+        git commit -m "Add predictions file for ${{ env.START_DATE }} to ${{ env.END_DATE }}"
+        git push
 
     - name: Find Existing Issue
       id: find-issue
