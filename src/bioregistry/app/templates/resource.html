@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "macros.html" as utils %}
 
-{% block title %}{{ config.METAREGISTRY_TITLE }} - {{ name }}{% endblock %}
+{% block title %}{{ config.METAREGISTRY_TITLE }} - {{ name_pack.value }}{% endblock %}
 
 {% block styles %}
 {{ super() }}
@@ -57,7 +57,10 @@
             <div class="row align-items-center">
                 <div class="col-8">
                     <h5 style="margin: 0"><a href="{{ url_for("metaregistry_ui.resources") }}">Registry</a> <i
-                            class="fas fa-angle-right"></i> {{ name }}
+                            class="fas fa-angle-right"></i> {{ name_pack.value }}
+                        <span type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="This name annotation comes from {{ name_pack.name }} and is redistributed under the {{ name_pack.license }}.">
+                          <i class="fas fa-book"></i>
+                        </span>
                         {{ utils.render_resource_warnings(resource) }}
                     </h5>
                 </div>
@@ -79,7 +82,7 @@
                         </div>
                     </div>
                     <a class="btn btn-sm btn-outline-dark" style="margin-right: 0.5em"
-                       href="https://github.com/biopragmatics/bioregistry/issues/new?labels=Update&template=update-misc.yml&prefix={{ prefix }}&title=Update+{{ name }}">
+                       href="https://github.com/biopragmatics/bioregistry/issues/new?labels=Update&template=update-misc.yml&prefix={{ prefix }}&title=Update+{{ name_pack.value }}">
                         Suggest
                     </a>
                     </div>
@@ -90,7 +93,7 @@
             {% if description %}
                 <p>
                 {% if resource.get_logo() %}
-                <img style="max-height: 70px; float: right;" src="{{ resource.get_logo() }}" alt="Logo for {{ resource.get_name() }}"/>
+                <img style="max-height: 70px; float: right;" src="{{ resource.get_logo() }}" alt="Logo for {{ name_pack.value }}"/>
                 {% endif %}
                 {{ description }}
                 </p>
@@ -251,7 +254,7 @@
                 <dd>
                     {% if pattern %}
                         <p>
-                            Local identifiers in {{ name }} should match this
+                            Local identifiers in {{ name_pack.value }} should match this
                             regular expression:<br/><kbd>{{ pattern }}</kbd>
                         </p>
                     {% elif has_no_terms %}
@@ -286,7 +289,7 @@
                 <dt>Pattern for CURIES</dt>
                 <dd>
                     <p>
-                        Compact URIs (CURIEs) constructed from {{ name }} should match
+                        Compact URIs (CURIEs) constructed from {{ name_pack.value }} should match
                         this regular expression:<br/><kbd>{{ curie_pattern }}</kbd>
                     </p>
                 </dd>
@@ -484,7 +487,7 @@
         <div class="card" style="margin-top: 20px">
             <a id="mappings"></a>
             <h5 class="card-header">
-                Metaregistry <i class="fas fa-angle-right"></i> {{ name }}
+                Metaregistry <i class="fas fa-angle-right"></i> {{ name_pack.value }}
             </h5>
             <div class="card-body">
                 <p>
@@ -529,7 +532,7 @@
                         {# <td>{{ resource.get_prefix_key("name", mapping.metaprefix) or "" }}</td> #}
                         <td style="text-align: center;">
                             <a data-toggle="tooltip" data-html="true"
-                               title="Report misalignment between {{ name }} and <code>{{ mapping.metaprefix }}:{{ mapping.xref }}</code>"
+                               title="Report misalignment between {{ name_pack.value }} and <code>{{ mapping.metaprefix }}:{{ mapping.xref }}</code>"
                                href="https://github.com/biopragmatics/bioregistry/issues/new?labels=Update%2CPrefix&template=mismatch.yml&title=Remove+incorrect+mapping+from+{{ resource.prefix }}+to+%60{{ mapping.metaprefix }}%3A{{ mapping.xref }}%60&prefix={{ resource.prefix }}&metaprefix={{ mapping.metaprefix }}&external-prefix={{ mapping.xref }}">
                                 <i class="fas fa-pen"></i>
                             </a>
@@ -592,7 +595,7 @@
                 {% if providers %}
                 <p>
                     The local unique identifier <code>{{ example }}</code> is used to demonstrate the providers
-                    available for {{ name }}. A guide for curating additional providers can be found
+                    available for {{ name_pack.value }}. A guide for curating additional providers can be found
                     <a href="https://biopragmatics.github.io/bioregistry/curation/providers">here</a>.
                 </p>
                 {% else %}

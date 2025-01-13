@@ -18,6 +18,7 @@ from bioregistry.constants import BIOREGISTRY_PATH, EMAIL_RE, PYDANTIC_1
 from bioregistry.export.rdf_export import resource_to_rdf_str
 from bioregistry.license_standardizer import REVERSE_LICENSES, standardize_license
 from bioregistry.resolve import get_obo_context_prefix_map
+from bioregistry.resource_manager import ValuePackageExtended
 from bioregistry.schema.struct import (
     SCHEMA_PATH,
     Attributable,
@@ -150,6 +151,24 @@ class TestRegistry(unittest.TestCase):
             if "." in prefix and prefix.split(".")[0] == name.lower():
                 with self.subTest(prefix=prefix):
                     self.fail(msg=f"{prefix} acronym ({name}) is not expanded")
+
+    def test_get_name(self) -> None:
+        """Test getting the name."""
+        self.assertEqual(None, bioregistry.get_name("nope"))
+        self.assertEqual(None, bioregistry.get_name("nope", provenance=True))
+        self.assertEqual(None, bioregistry.get_name("nope", provenance=False))
+
+        res = bioregistry.get_name("go")
+        self.assertIsInstance(res, str)
+        self.assertEqual("Gene Ontology", res)
+
+        res = bioregistry.get_name("go", provenance=False)
+        self.assertIsInstance(res, str)
+        self.assertEqual("Gene Ontology", res)
+
+        prov = bioregistry.get_name("go", provenance=True)
+        self.assertIsInstance(prov, ValuePackageExtended)
+        self.assertEqual("Gene Ontology", prov.value)
 
     def test_has_description(self):
         """Test that all non-deprecated entries have a description."""
@@ -720,6 +739,25 @@ class TestRegistry(unittest.TestCase):
         This is required because the annotation from MIRIAM is simply not granular enough
         to support actual use cases.
         """
+        self.assertIsNone(bioregistry.get_namespace_in_lui("nope"))
+        self.assertIsNone(bioregistry.get_namespace_in_lui("nope", provenance=True))
+        self.assertIsNone(bioregistry.get_namespace_in_lui("nope", provenance=False))
+        res = bioregistry.get_namespace_in_lui("go")
+        self.assertIsInstance(res, bool)
+        self.assertTrue(res)
+
+        res = bioregistry.get_namespace_in_lui("pdb")
+        self.assertIsInstance(res, bool)
+        self.assertFalse(res)
+
+        res = bioregistry.get_namespace_in_lui("go", provenance=True)
+        self.assertIsInstance(res, ValuePackageExtended)
+        self.assertTrue(res.value)
+
+        res = bioregistry.get_namespace_in_lui("pdb", provenance=True)
+        self.assertIsInstance(res, ValuePackageExtended)
+        self.assertFalse(res.value)
+
         for prefix, resource in self.registry.items():
             if not resource.get_namespace_in_lui():
                 continue
