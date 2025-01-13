@@ -20,8 +20,9 @@ jobs:
 
     - name: Install dependencies
       run: |
+        # TODO update to using uv
         python -m pip install --upgrade pip
-        pip install -r src/bioregistry/analysis/paper_ranking_requirements.txt
+        pip install .[paper-ranking]
 
     - name: Set Date Variables
       id: set-date-variables
@@ -39,6 +40,7 @@ jobs:
       id: run-ranking-script
       run: |
         echo "PYTHONPATH=$PYTHONPATH"  # Verify PYTHONPATH
+        # TODO update to using python -m
         python src/bioregistry/analysis/paper_ranking.py --start-date ${{ env.START_DATE }} --end-date ${{ env.END_DATE }}
 
     - name: Upload Full List as Artifact

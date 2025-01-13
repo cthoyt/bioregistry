@@ -136,6 +136,13 @@ web = [
     "curies[fastapi]",
     "a2wsgi",
 ]
+paper-ranking = [
+    "indra",
+    "pandas",
+    "scikit-learn",
+    "tabulate",
+    "more_itertools",
+]
 
 
 # See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#urls
